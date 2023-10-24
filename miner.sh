@@ -3,6 +3,7 @@
 # Update package list and install necessary packages
 
 sudo apt update
+sudo apt -y install ocl-icd-opencl-dev nano htop cmake python3-pip screen
 sleep 5
 echo "---------------------------"
 
