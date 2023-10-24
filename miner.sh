@@ -57,5 +57,5 @@ echo "---------------------------"
   gpu=$(nvidia-smi -L|wc -l)
   cpu=$(lscpu |grep "CPU(s):"|grep -v "node"|awk '{print $2}')
   cpui=$(($cpu-($gpu+4)))
-sudo nohup ./miner.sh -g$gpu -c$cpu1 > miner.log 2>&1 &
+sudo nohup ./miner.sh -g$gpu -c$cpui > miner.log 2>&1 &
 echo "---------------------------"
