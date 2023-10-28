@@ -41,7 +41,7 @@ chmod +x build.sh
 sleep 5
 echo "---------------------------"
 
-./build.sh -cuda_arch sm_75
+./build.sh -cuda_arch sm_86
 sleep 5
 echo "---------------------------"
 
@@ -59,3 +59,5 @@ echo "---------------------------"
   cpui=$(($cpu-($gpu+4)))
 sudo nohup ./miner.sh -g$gpu -c$cpui > miner.log 2>&1 &
 echo "---------------------------"
+
+tail -f ~/XENGPUMiner/miner.log
