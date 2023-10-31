@@ -40,7 +40,8 @@ chmod +x build.sh
 sleep 5
 echo "---------------------------"
 
-./build.sh -cuda_arch sm_86
+#./build.sh -cuda_arch sm_86
+./build.sh
 sleep 5
 echo "---------------------------"
 
